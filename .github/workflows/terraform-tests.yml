@@ -29,5 +29,8 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
 
+      - name: Make test.sh executable
+        run: chmod +x ./test.sh
+
       - name: Run Custom Tests
         run: ./test.sh
